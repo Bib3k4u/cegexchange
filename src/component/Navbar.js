@@ -32,7 +32,7 @@ function Navbar() {
                         </ul>
                     </div>
                     <div className="right-area custom-pos position-relative d-flex gap-0 gap-lg-7 align-items-center me-5 me-xl-10 ">
-                    <a href="#" className="cmn-btn px-lg-11" style={{ width: window.innerWidth < 640 ? '90px' : 'auto', fontSize: window.innerWidth < 640 ? '10px' : 'auto' }}>Demo Account</a>
+                    <a href="#" className="cmn-btn px-lg-11" style={{ width: window.innerWidth < 640 ? '50px' : 'auto', fontSize: window.innerWidth < 640 ? '10px' : 'auto' }}>Demo</a>
                         <a style={{ width: window.innerWidth < 640 ? '50px' : 'auto', fontSize: window.innerWidth < 640 ? '10px' : 'auto' }} href="#" className="cmn-btn second-alt px-lg-11 rounded-2">Log In</a>
                         <a style={{ width: window.innerWidth < 640 ? '55px' : 'auto', fontSize: window.innerWidth < 640 ? '10px' : 'auto' }} href="#" className="cmn-btn px-lg-11">Sign Up</a>
                     </div>

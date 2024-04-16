@@ -1,6 +1,29 @@
+import { width } from '@fortawesome/free-solid-svg-icons/fa0';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 function Home() {
+
+    const containerStyle = {
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+    };
+
+    const getImageContainerStyle = () => {
+        const windowWidth = window.innerWidth;
+        const itemWidth = windowWidth > 992 ? (100 / 3) - 2 : 33.333; // Divide by 3 for large screens, subtracting 2 for margins
+        return {
+            flex: `0 0 ${itemWidth}%`,
+            maxWidth: `${itemWidth}%`,
+            padding: '5px',
+        };
+    };
+
+    const imageStyle = {
+        maxWidth: '100%',
+        height: 'auto',
+        width: '100%'
+    };
     return (
         /* Header Starts */
         <div>
@@ -13,7 +36,7 @@ function Home() {
                                 <div className="row w-100 mb-8 mb-md-10 pt-md-5">
                                     <div className="banner">
                                         <div className='col-12'>
-                                            <img src='assets/images/banner (1).jpg' alt='Banner' />
+                                            <img src='assets/images/banner1.jpg' alt='Banner' class='banner' />
                                         </div>
                                     </div>
                                     <div className="col-12">
@@ -24,36 +47,45 @@ function Home() {
                                         <div className="top_matches__content">
                                             <div className='row'>
                                                 <div className='col-lg-3 col-xs-12 main-colfor_col'>
-                                                    <div className='imagewrapper'>
-                                                        <img src='assets/images/games/t1.jpg' />
+                                                    <div style={{ width: '100%', display: 'flex', flexDirection: 'row', margin: '10px', gap: '10px', justifyContent: 'space-around' }} className='imagewrapper'>
+                                                        <img src='assets/images/banner2.jpg' style={{ maxWidth: '100%', height: window.innerWidth < 576 ? '15   0px' : 'auto' }} />
+                                                        <img src='https://media.geeksforgeeks.org/wp-content/uploads/20231208151803/IPL-Auction-2024.jpg' style={{ maxWidth: '100%', height: 'auto' }} />
+                                                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR27B5OBkGBaPOrJI9fr3sA2zT5FPNMl7FMf4gTmSvD8Q&s' style={{ maxWidth: '100%', height: 'auto' }} />
+                                                        <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEVOC1727Y58trLyHzQZhtYlzDGz4CNg67iqYFTRnFxD91MEF2nHP5VuCXa0rt5iIleMY&usqp=CAU' style={{ maxWidth: '100%', height: 'auto' }} />
                                                     </div>
                                                 </div>
-                                                <div className='col-lg-9'>
-                                                    <div className='row justify-content-center'>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx1.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx2.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx3.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx4.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx5.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx6.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx7.png' />
-                                                        </div>
-                                                        <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                                            <img src='assets/images/games/game-xx8.png' />
-                                                        </div>
+
+                                                <div style={containerStyle}>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx1.png' style={imageStyle} alt='Game 1' />
+                                                    </div>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx2.png' style={imageStyle} alt='Game 2' />
+                                                    </div>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx3.png' style={imageStyle} alt='Game 3' />
+                                                    </div>
+                                                </div>
+                                                <div style={containerStyle}>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx4.png' style={imageStyle} alt='Game 4' />
+                                                    </div>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx5.png' style={imageStyle} alt='Game 5' />
+                                                    </div>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx6.png' style={imageStyle} alt='Game 6' />
+                                                    </div>
+                                                </div>
+                                                <div style={containerStyle}>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx7.png' style={imageStyle} alt='Game 7' />
+                                                    </div>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx8.png' style={imageStyle} alt='Game 8' />
+                                                    </div>
+                                                    <div style={getImageContainerStyle()}>
+                                                        <img src='assets/images/games/game-xx9.png' style={imageStyle} alt='Game 9' />
                                                     </div>
                                                 </div>
                                             </div>
@@ -409,32 +441,45 @@ function Home() {
 
                                     </div>
                                 </div>
-                                <div className="row justify-content-center">
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx1.png' />
+
+                                <div style={containerStyle}>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx1.png" alt="Game 1" style={imageStyle} />
                                     </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx2.png' />
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx2.png" style={imageStyle} alt='Game 2' />
                                     </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx3.png' />
-                                    </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx4.png' />
-                                    </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx5.png' />
-                                    </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx6.png' />
-                                    </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx7.png' />
-                                    </div>
-                                    <div className='col-xs-6 col-sm-4 col-lg-3 gamess'>
-                                        <img src='assets/images/games/game-xx8.png' />
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx3.png" style={imageStyle} alt='Game 3' />
                                     </div>
                                 </div>
+
+                                <div style={containerStyle}>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx4.png" alt="Game 1" style={imageStyle} />
+                                    </div>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx5.png" style={imageStyle} alt='Game 2' />
+                                    </div>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx6.png" style={imageStyle} alt='Game 3' />
+                                    </div>
+                                </div>
+
+                                <div style={containerStyle}>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx7.png" alt="Game 1" style={imageStyle} />
+                                    </div>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx8.png" style={imageStyle} alt='Game 2' />
+                                    </div>
+                                    <div style={getImageContainerStyle()}>
+                                        <img src="assets/images/games/game-xx1.png" style={imageStyle} alt='Game 3' />
+                                    </div>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>

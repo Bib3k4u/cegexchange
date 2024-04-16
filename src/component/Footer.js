@@ -10,89 +10,7 @@ function Footer() {
                     <div class="col-12">
                         <div class="footer_section__main">
                             <div class="row gy-8">
-                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="footer_section__sports">
-                                        <h4 class="mb-5 mb-md-6">Sports</h4>
-                                        <ul class="d-flex flex-column gap-5">
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Sports</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Live Betting</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Virtuals</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Football</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Basketball</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Ice Hockey</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-2 col-xxl-2">
-                                    <div class="footer_section__promotions">
-                                        <h4 class="mb-5 mb-md-6">Promotions</h4>
-                                        <ul class="d-flex flex-column gap-5">
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Sports Promotions</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Tournaments</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Achievements</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Bonus Shop</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-2">
-                                    <div class="footer_section__help">
-                                        <h4 class="mb-5 mb-md-6">Help</h4>
-                                        <ul class="d-flex flex-column gap-5">
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Help</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Bet Slip Check</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Deposits /
-                                                    Withdrawals</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Sports results</a>
-                                            </li>
-                                            <li class="iconstyle d-flex align-items-center">
-                                                <i class="ti ti-arrow-badge-right fs-five"></i>
-                                                <a class="fs-ten n4-color" href="javascript:void(0)">Sports stats</a>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                </div>
+                               
                                 <div class="col-sm-6 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
                                     <div class="footer_section__security">
                                         <h4 class="mb-5 mb-md-6">Security and Privacy</h4>
@@ -117,55 +35,7 @@ function Footer() {
                                         </ul>
                                     </div>
                                 </div>
-                                {/* <div class="col-sm-8 col-md-5 col-lg-6 col-xxl-3">
-                                <div class="footer_section__community">
-                                    <h4 class="mb-5 mb-md-6">Join our Community</h4>
-                                    <ul class="d-flex align-items-center flex-wrap gap-5">
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-brand-telegram fs-three"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-brand-github-filled fs-three"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-brand-x fs-three"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-brand-facebook-filled fs-three"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-brand-discord-filled fs-three"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-currency-bitcoin bitcoin fs-three"></i>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="footer_section__community-sitem n4-color"
-                                                href="javascript:void(0)">
-                                                <i class="ti ti-brand-instagram fs-three"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div> */}
+                               
                             </div>
                         </div>
                     </div>
